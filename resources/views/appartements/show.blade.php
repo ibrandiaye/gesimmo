@@ -39,7 +39,7 @@
                 </div>
                 <div>
                     <label class="block text-sm font-medium text-gray-600">Loyer mensuel</label>
-                    <p class="mt-1 text-gray-900 font-medium">{{ number_format($appartement->loyer_mensuel, 2, ',', ' ') }} €</p>
+                    <p class="mt-1 text-gray-900 font-medium">{{ number_format($appartement->loyer_mensuel, 2, ',', ' ') }} XOF</p>
                 </div>
                 <div>
                     <label class="block text-sm font-medium text-gray-600">Statut</label>
@@ -79,7 +79,7 @@
                             <p class="text-sm text-gray-600">
                                 Du {{ $contrat->date_debut->format('d/m/Y') }} au {{ $contrat->date_fin->format('d/m/Y') }}
                             </p>
-                            <p class="text-sm text-gray-600">Loyer: {{ number_format($contrat->loyer_mensuel, 2, ',', ' ') }} €</p>
+                            <p class="text-sm text-gray-600">Loyer: {{ number_format($contrat->loyer_mensuel, 2, ',', ' ') }} XOF</p>
                         </div>
                         <div class="text-right">
                             <span class="px-2 py-1 text-xs rounded-full
@@ -124,12 +124,12 @@
 
                 <div>
                     <label class="block text-sm font-medium text-gray-600">Loyer</label>
-                    <p class="mt-1 text-gray-900 font-medium">{{ number_format($appartement->contratActif->loyer_mensuel, 2, ',', ' ') }} €</p>
+                    <p class="mt-1 text-gray-900 font-medium">{{ number_format($appartement->contratActif->loyer_mensuel, 2, ',', ' ') }} XOF</p>
                 </div>
 
                 <div>
                     <label class="block text-sm font-medium text-gray-600">Dépôt de garantie</label>
-                    <p class="mt-1 text-gray-900">{{ number_format($appartement->contratActif->depot_garantie, 2, ',', ' ') }} €</p>
+                    <p class="mt-1 text-gray-900">{{ number_format($appartement->contratActif->depot_garantie, 2, ',', ' ') }} XOF</p>
                 </div>
 
                 <div class="pt-4">

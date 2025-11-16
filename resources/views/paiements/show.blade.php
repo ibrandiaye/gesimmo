@@ -82,7 +82,7 @@
                 </div>
                 <div>
                     <label class="block text-sm font-medium text-gray-600">Montant</label>
-                    <p class="mt-1 text-gray-900 font-medium text-xl">{{ number_format($paiement->montant, 2, ',', ' ') }} €</p>
+                    <p class="mt-1 text-gray-900 font-medium text-xl">{{ number_format($paiement->montant, 2, ',', ' ') }} XOF</p>
                 </div>
                 <div>
                     <label class="block text-sm font-medium text-gray-600">Date de paiement</label>
@@ -156,7 +156,7 @@
                 <div class="flex justify-between">
                     <span class="text-sm text-gray-600">Loyer mensuel:</span>
                     <span class="text-sm font-medium text-gray-900">
-                        {{ number_format($paiement->contrat->loyer_mensuel, 2, ',', ' ') }} €
+                        {{ number_format($paiement->contrat->loyer_mensuel, 2, ',', ' ') }} XOF
                     </span>
                 </div>
                 <div class="flex justify-between">

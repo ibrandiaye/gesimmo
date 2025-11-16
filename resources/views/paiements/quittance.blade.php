@@ -181,7 +181,7 @@
     <!-- Montant -->
     <div class="amount-box">
         <div style="font-size: 16px; margin-bottom: 10px;">MONTANT REÇU</div>
-        <div class="amount">{{ number_format($paiement->montant, 2, ',', ' ') }} €</div>
+        <div class="amount">{{ number_format($paiement->montant, 2, ',', ' ') }} XOF</div>
         <div class="montant-en-lettres">
             {{ $paiement->getMontantEnLettres() }}
         </div>
@@ -197,11 +197,11 @@
             </div>
             <div class="info-item">
                 <div class="info-label">Loyer mensuel</div>
-                <div class="info-value">{{ number_format($paiement->contrat->loyer_mensuel, 2, ',', ' ') }} €</div>
+                <div class="info-value">{{ number_format($paiement->contrat->loyer_mensuel, 2, ',', ' ') }} XOF</div>
             </div>
             <div class="info-item">
                 <div class="info-label">Dépôt de garantie</div>
-                <div class="info-value">{{ number_format($paiement->contrat->depot_garantie, 2, ',', ' ') }} €</div>
+                <div class="info-value">{{ number_format($paiement->contrat->depot_garantie, 2, ',', ' ') }} XOF</div>
             </div>
         </div>
         <div class="grid-2" style="margin-top: 10px;">

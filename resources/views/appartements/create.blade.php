@@ -60,7 +60,7 @@
                 </div>
 
                 <div>
-                    <label for="loyer_mensuel" class="block text-sm font-medium text-gray-700">Loyer mensuel (€) *</label>
+                    <label for="loyer_mensuel" class="block text-sm font-medium text-gray-700">Loyer mensuel (XOF) *</label>
                     <input type="number" step="0.01" name="loyer_mensuel" id="loyer_mensuel" required
                            class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
                            value="{{ old('loyer_mensuel') }}">

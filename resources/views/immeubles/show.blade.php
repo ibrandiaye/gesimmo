@@ -90,7 +90,7 @@
                         <div class="text-gray-900">{{ $appartement->nombre_pieces }} pièces</div>
                     </td>
                     <td class="px-6 py-4 whitespace-nowrap">
-                        <div class="text-gray-900 font-medium">{{ number_format($appartement->loyer_mensuel, 2, ',', ' ') }} €</div>
+                        <div class="text-gray-900 font-medium">{{ number_format($appartement->loyer_mensuel, 2, ',', ' ') }} XOF</div>
                     </td>
                     <td class="px-6 py-4 whitespace-nowrap">
                         @if($appartement->statut == 'occupe')

@@ -21,7 +21,7 @@
                         @foreach($contrats as $contrat)
                             <option value="{{ $contrat->id }}" {{ old('contrat_id', $paiement->contrat_id) == $contrat->id ? 'selected' : '' }}>
                                 {{ $contrat->locataire->prenom }} {{ $contrat->locataire->nom }} -
-                                {{ $contrat->appartement->numero }} ({{ number_format($contrat->loyer_mensuel, 2, ',', ' ') }} €)
+                                {{ $contrat->appartement->numero }} ({{ number_format($contrat->loyer_mensuel, 2, ',', ' ') }} XOF)
                             </option>
                         @endforeach
                     </select>
@@ -67,7 +67,7 @@
 
                 <!-- Montant et date -->
                 <div>
-                    <label for="montant" class="block text-sm font-medium text-gray-700">Montant (€) *</label>
+                    <label for="montant" class="block text-sm font-medium text-gray-700">Montant (XOF) *</label>
                     <input type="number" step="0.01" name="montant" id="montant" required
                            class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
                            value="{{ old('montant', $paiement->montant) }}">

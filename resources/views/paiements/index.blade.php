@@ -82,7 +82,7 @@
                         <div class="text-sm text-gray-900">{{ $paiement->mois }}/{{ $paiement->annee }}</div>
                     </td>
                     <td class="px-6 py-4 whitespace-nowrap">
-                        <div class="text-sm font-medium text-gray-900">{{ number_format($paiement->montant, 2, ',', ' ') }} €</div>
+                        <div class="text-sm font-medium text-gray-900">{{ number_format($paiement->montant, 2, ',', ' ') }} XOF</div>
                     </td>
                     <td class="px-6 py-4 whitespace-nowrap">
                         <div class="text-sm text-gray-900">{{ $paiement->date_paiement->format('d/m/Y') }}</div>

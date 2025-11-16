@@ -88,11 +88,11 @@
                                 </div>
                                 <div>
                                     <span class="text-gray-600">Loyer:</span>
-                                    <p class="text-gray-900 font-medium">{{ number_format($contrat->loyer_mensuel, 2, ',', ' ') }} €</p>
+                                    <p class="text-gray-900 font-medium">{{ number_format($contrat->loyer_mensuel, 2, ',', ' ') }} XOF</p>
                                 </div>
                                 <div>
                                     <span class="text-gray-600">Garantie:</span>
-                                    <p class="text-gray-900">{{ number_format($contrat->depot_garantie, 2, ',', ' ') }} €</p>
+                                    <p class="text-gray-900">{{ number_format($contrat->depot_garantie, 2, ',', ' ') }} XOF</p>
                                 </div>
                             </div>
                             @if($contrat->conditions_speciales)
@@ -139,7 +139,7 @@
                                 <div class="text-sm text-gray-900">{{ $paiement->mois }}/{{ $paiement->annee }}</div>
                             </td>
                             <td class="px-4 py-2 whitespace-nowrap">
-                                <div class="text-sm font-medium text-gray-900">{{ number_format($paiement->montant, 2, ',', ' ') }} €</div>
+                                <div class="text-sm font-medium text-gray-900">{{ number_format($paiement->montant, 2, ',', ' ') }} XOF</div>
                             </td>
                             <td class="px-4 py-2 whitespace-nowrap">
                                 <div class="text-sm text-gray-900">{{ $paiement->date_paiement->format('d/m/Y') }}</div>
@@ -193,12 +193,12 @@
 
                 <div>
                     <label class="block text-sm font-medium text-gray-600">Loyer mensuel</label>
-                    <p class="mt-1 text-gray-900 font-medium">{{ number_format($locataire->contratActif->loyer_mensuel, 2, ',', ' ') }} €</p>
+                    <p class="mt-1 text-gray-900 font-medium">{{ number_format($locataire->contratActif->loyer_mensuel, 2, ',', ' ') }} XOF</p>
                 </div>
 
                 <div>
                     <label class="block text-sm font-medium text-gray-600">Dépôt de garantie</label>
-                    <p class="mt-1 text-gray-900">{{ number_format($locataire->contratActif->depot_garantie, 2, ',', ' ') }} €</p>
+                    <p class="mt-1 text-gray-900">{{ number_format($locataire->contratActif->depot_garantie, 2, ',', ' ') }} XOF</p>
                 </div>
 
                 <div class="pt-4">
